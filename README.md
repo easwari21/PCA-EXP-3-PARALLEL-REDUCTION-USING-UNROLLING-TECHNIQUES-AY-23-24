@@ -151,12 +151,20 @@ int main(int argc, char **argv) {
     return 0;
 }
 ```
+
+
 <img width="340" height="37" alt="image" src="https://github.com/user-attachments/assets/d9260b35-50d7-4caa-a957-9153793277cb" />
+
+
 ```
 !nvcc -arch=sm_75 reduction_unroll8.cu -o reduction
 !./reduction
 ```
+
+
 <img width="288" height="76" alt="image" src="https://github.com/user-attachments/assets/f9bea701-5ff1-42a4-84db-4a3fc6435358" />
+
+
 ```
 %%writefile reduction_unroll8_16_simple.cu
 #include <stdio.h>
@@ -344,11 +352,16 @@ int main() {
     return 0;
 }
 ```
+
+
 <img width="446" height="41" alt="image" src="https://github.com/user-attachments/assets/39269e2d-92a5-4e6b-bea0-723553d39d67" />
+
+
 ```
 !nvcc -arch=sm_75 reduction_unroll8_16_simple.cu -o reduction
 !./reduction
 ```
+
 <img width="441" height="72" alt="image" src="https://github.com/user-attachments/assets/453a1cf6-b037-4a5d-81f9-59d3738c1f65" />
 
 
